@@ -15,6 +15,7 @@
                  :opts ["--initialize-at-build-time"
                         "--allow-incomplete-classpath"
                         "--initialize-at-run-time=org.pcap4j.core.NativePacketDllMappings"
+                        "-H:ConfigurationFileDirectories=conf"
                         "-H:+JNI"
                         "--no-server"
                         "-H:+ReportExceptionStackTraces"
