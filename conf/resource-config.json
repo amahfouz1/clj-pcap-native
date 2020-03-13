@@ -1,0 +1,16 @@
+{
+  "resources":[
+    {"pattern":"\\QMETA-INF/services/jdk.vm.ci.hotspot.HotSpotJVMCIBackendFactory\\E"}, 
+    {"pattern":"\\QMETA-INF/services/jdk.vm.ci.services.JVMCIServiceLocator\\E"}, 
+    {"pattern":"\\Qclj_pcap/core.clj\\E"}, 
+    {"pattern":"\\Qclj_pcap/core__init.class\\E"}, 
+    {"pattern":"\\Qclojure/core.clj\\E"}, 
+    {"pattern":"\\Qclojure/core/server.clj\\E"}, 
+    {"pattern":"\\Qclojure/core/server__init.class\\E"}, 
+    {"pattern":"\\Qclojure/core__init.class\\E"}, 
+    {"pattern":"\\Qcom/sun/jna/linux-x86-64/libjnidispatch.so\\E"}, 
+    {"pattern":"\\Qorg/pcap4j/pcap4j.properties\\E"}, 
+    {"pattern":"\\Qorg/slf4j/impl/StaticLoggerBinder.class\\E"}
+  ],
+  "bundles":[]
+}
