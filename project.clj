@@ -14,16 +14,22 @@
   :native-image {:name "cljpcap"
                  :opts ["--initialize-at-build-time"
                         "--allow-incomplete-classpath"
-                        "--initialize-at-run-time=org.pcap4j.core.NativePacketDllMappings"
-                        "-H:ConfigurationFileDirectories=conf"
-                        "-H:+JNI"
+                        "--initialize-at-run-time=org.pcap4j.core.NativePacketDllMappings,com.sun.jna"
+                        "-Djna.debug_load=true"
                         "--no-server"
+                        "-H:Log=registerResource"
+                        "-H:+PrintAnalysisCallTree"
+                        "-H:+JNI"
                         "-H:+ReportExceptionStackTraces"
                         "--no-fallback"
                         "--enable-all-security-services"
+                        "-H:ResourceConfigurationFiles=conf/resource-config.json"
+                        "--static"
                         "-H:EnableURLProtocols=http,https"
                         "--verbose"]
                  :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}
-  :main ^:skip-aot clj-pcap.core
+  :source-paths ["src"]
+  :java-source-paths ["java"]
+  :main ^:skip-aot com.test.PcapNative
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})

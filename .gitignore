@@ -4,6 +4,7 @@
 /checkouts
 profiles.clj
 pom.xml
+.DS_Store
 pom.xml.asc
 *.jar
 *.class
