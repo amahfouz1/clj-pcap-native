@@ -24,6 +24,7 @@
                         "--no-fallback"
                         "--enable-all-security-services"
                         "-H:ResourceConfigurationFiles=conf/resource-config.json"
+                        "-H:JNIConfigurationFiles=conf/jni-config.json"
                         "--static"
                         "-H:EnableURLProtocols=http,https"
                         "--verbose"]

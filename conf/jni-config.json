@@ -1,6 +1,9 @@
 [
-{
-  "name":"clj_pcap.core",
-  "methods":[{"name":"main","parameterTypes":["java.lang.String[]"] }]
-}
+  {
+    "name" : "com.sun.jna.Native",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true
+  }
 ]
